@@ -1,6 +1,3 @@
-Aquí tienes el README completo para copiar y pegar:
-
-```markdown
 # Read A Book
 
 ## 📌 Descripción
