@@ -10,7 +10,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 # Ruta donde se guardarán las capturas de pantalla
 REPORTS_PATH = r"C:\laragon\www\readabook\readabook-tests\reports\test_reportes"
 
-# Asegúrate de que la ruta exista
 if not os.path.exists(REPORTS_PATH):
     os.makedirs(REPORTS_PATH)
 
@@ -23,7 +22,6 @@ def init_driver():
 
 # Función para tomar capturas de pantalla
 def save_screenshot(driver, test_name, stage):
-    """Toma una captura de pantalla y la guarda con un nombre apropiado."""
     try:
         filename = f"{stage}_{test_name}.png"
         filepath = os.path.join(REPORTS_PATH, filename)
@@ -34,7 +32,6 @@ def save_screenshot(driver, test_name, stage):
 
 # Función para desplazarse a un elemento específico
 def scroll_to_element(driver, element):
-    """Desplaza la vista hasta el elemento especificado"""
     try:
         driver.execute_script("arguments[0].scrollIntoView(true);", element)
         driver.execute_script("window.scrollBy(0, -100);")
@@ -51,8 +48,8 @@ def login_as_admin(driver):
     driver.get("http://localhost/readabook/login.php")
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, "email")))
 
-    driver.find_element(By.ID, "email").send_keys("admin@readabook.com")
-    driver.find_element(By.ID, "password").send_keys("1234")
+    driver.find_element(By.ID, "email").send_keys("pruebas@example.com")
+    driver.find_element(By.ID, "password").send_keys("19284637839")
     driver.find_element(By.XPATH, "//button[@type='submit']").click()
 
     WebDriverWait(driver, 10).until(EC.url_contains("admin/index.php"))

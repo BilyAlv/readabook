@@ -22,14 +22,7 @@ def init_driver():
 
 # Captura de pantalla mejorada
 def save_screenshot(driver, test_name, stage):
-    """
-    Toma una captura de pantalla con nombre específico.
-    
-    Args:
-        driver: Instancia de WebDriver
-        test_name: Nombre del test
-        stage: Etapa (before/after/error)
-    """
+
     try:
         screenshot_path = os.path.join(report_path, f"{stage}_{test_name}.png")
         driver.save_screenshot(screenshot_path)
@@ -56,8 +49,8 @@ def test_login_success_admin(setup):
 
     try:
         # Datos correctos de admin
-        driver.find_element(By.ID, "email").send_keys("admin@readabook.com")
-        driver.find_element(By.ID, "password").send_keys("1234")
+        driver.find_element(By.ID, "email").send_keys("pruebas@example.com")
+        driver.find_element(By.ID, "password").send_keys("19284637839")
         
         # Captura antes de enviar el formulario
         save_screenshot(driver, test_name, "filled_form")

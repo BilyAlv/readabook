@@ -10,7 +10,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 # Ruta donde se guardarán las capturas de pantalla
 REPORTS_PATH = r"C:\laragon\www\readabook\readabook-tests\reports\test_gestion-usuarios"
 
-# Asegúrate de que la ruta exista
 if not os.path.exists(REPORTS_PATH):
     os.makedirs(REPORTS_PATH)
 
@@ -24,9 +23,7 @@ def setup():
 
 # Función para desplazarse a la tabla de usuarios
 def scroll_to_users_table(driver):
-    """
-    Desplaza la vista hasta la tabla de usuarios
-    """
+
     try:
         # Esperar a que la tabla esté presente
         table = WebDriverWait(driver, 10).until(
@@ -41,17 +38,8 @@ def scroll_to_users_table(driver):
 
 # Función para tomar capturas de pantalla antes y después de cada test
 def take_screenshot(driver, test_name, stage):
-    """
-    Toma una captura de pantalla y la guarda con un nombre apropiado.
-    Si el stage contiene 'table', primero se desplaza hacia la tabla.
-    
-    Args:
-        driver: Instancia del WebDriver
-        test_name: Nombre del test
-        stage: Etapa (before/after/error) con posible sufijo _table
-    """
+
     try:
-        # Si necesitamos capturar la tabla, desplazar hasta ella
         if "table" in stage:
             scroll_to_users_table(driver)
         
@@ -63,8 +51,8 @@ def take_screenshot(driver, test_name, stage):
         print(f"Error al tomar captura {stage} {test_name}: {e}")
 
 def login_as_admin(driver):
-    email = "admin@readabook.com"
-    password = "1234"
+    email = "pruebas@example.com"
+    password = "19284637839"
     WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, "email")))
 
     # Iniciar sesión como administrador

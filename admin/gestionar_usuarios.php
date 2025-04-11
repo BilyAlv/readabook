@@ -11,7 +11,7 @@ if (!isset($_SESSION['id']) || $_SESSION['rol'] !== 'admin') {
 if (isset($_POST['add_user'])) {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    ;$password = $_POST['password'];
     $rol = $_POST['rol'];
     
     $sql = "INSERT INTO usuarios (nombre, email, password, rol) VALUES (?, ?, ?, ?)";

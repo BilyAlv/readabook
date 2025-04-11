@@ -5,7 +5,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "admin";
-$dbname = "readabook";
+$dbname = "read_a_book";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -46,11 +46,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             // Redirigir según el rol del usuario
             if ($row['rol'] == 'admin') {
-                header("Location: admin/index.php"); // Redirige al panel de administración si es admin
+                echo "Redirigiendo como: admin";
+                header("Location: admin/index.php");
+                exit();
             } else {
-                header("Location: cliente/index.php"); // Redirige a la página principal si es usuario común
+                echo "Redirigiendo como: " . $row['rol'];
+                header("Location: client/index.php");
+                exit();
             }
-            exit();
+            
         } else {
             $error = "Contraseña incorrecta";
         }

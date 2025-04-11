@@ -165,9 +165,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 throw new Exception("Rol no válido.");
             }
             
-            // Cifrar contraseña
-            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-            
             // Preparar consulta
             $stmt = $conn->prepare("INSERT INTO usuarios (nombre, email, password, rol) VALUES (?, ?, ?, ?)");
             if (!$stmt) {
