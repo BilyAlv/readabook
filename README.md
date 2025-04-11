@@ -83,5 +83,3 @@ Se han implementado pruebas automatizadas para asegurar la correcta funcionalida
 
 ## 🔧 Recursos Adicionales
 - Para más detalles sobre el proyecto, consulta el código en GitHub: [BilyAlv/Tarea-03-Proyecto-Readabook](https://github.com/BilyAlv/Tarea-03-Proyecto-Readabook).
-```
-
