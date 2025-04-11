@@ -34,7 +34,7 @@ Read A Book es una plataforma web CRUD para la gestión de libros y usuarios. Pe
 ## 📝 Instalación y Configuración
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/BilyAlv/Tarea-03-Proyecto-Readabook.git
+   git clone https://github.com/BilyAlv/readabook.git
    ```
 2. Importar la base de datos desde el archivo `db/db.sql` o `db/db2.sql` a tu servidor MySQL.
 3. Configurar el archivo `includes/db.php` con tus credenciales de base de datos.
@@ -74,6 +74,7 @@ Se han implementado pruebas automatizadas para asegurar la correcta funcionalida
 - **Gestión de Usuarios**: Agregar, editar, eliminar usuarios.
 - **Autenticación**: Inicios de sesión exitosos y fallidos.
 - **Reportes**: Acceso y verificación de secciones en reportes.
+- **Catalogo**: Vista a catalogo de libros y inicio como cliente.
 
 ### **Para ejecutar las pruebas automatizadas:**
 1. Asegúrate de tener Python y Selenium instalados.
@@ -83,6 +84,6 @@ Se han implementado pruebas automatizadas para asegurar la correcta funcionalida
    ```
 
 ## 🔧 Recursos Adicionales
-- Para más detalles sobre el proyecto, consulta el código en GitHub: [BilyAlv/Tarea-03-Proyecto-Readabook](https://github.com/BilyAlv/Tarea-03-Proyecto-Readabook).
+- Para más detalles sobre el proyecto, consulta el código en GitHub: [BilyAlv/readabook](https://github.com/BilyAlv/readabook).
 
 
