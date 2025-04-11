@@ -1,6 +1,3 @@
-Aquí tienes una versión actualizada del archivo `README.md` para el proyecto **Read A Book**. He reorganizado y añadido algunos detalles para una mejor comprensión:
-
-```markdown
 # Read A Book
 
 ## 📌 Descripción
@@ -25,13 +22,13 @@ Read A Book es una plataforma web CRUD para la gestión de libros y usuarios. Pe
 ## 🔑 Credenciales de Acceso
 
 ### **Administrador**
-- **Email**: admin@readabook.com
+- **Email**: admin@example.com
 - **Contraseña**: `1234`
 - **Rol**: Admin
 
 ### **Usuario**
-- **Email**: usuario@readabook.com
-- **Contraseña**: `1234`
+- **Email**: user@example.com
+- **Contraseña**: `250105e`
 - **Rol**: Usuario
 
 ## 📝 Instalación y Configuración
@@ -87,5 +84,5 @@ Se han implementado pruebas automatizadas para asegurar la correcta funcionalida
 
 ## 🔧 Recursos Adicionales
 - Para más detalles sobre el proyecto, consulta el código en GitHub: [BilyAlv/Tarea-03-Proyecto-Readabook](https://github.com/BilyAlv/Tarea-03-Proyecto-Readabook).
-```
+
 
